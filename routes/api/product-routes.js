@@ -52,7 +52,7 @@ router.get("/:id", (req, res) => {
     })
     .catch((err) => {
       console.log(err);
-      res.status(500).json(err);
+      res.status(400).json(err);
     });
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
