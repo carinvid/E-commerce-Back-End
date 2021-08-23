@@ -1,19 +1,25 @@
-# E-commerce-Back-End
+:wave: # E-commerce-Back-End :monocle_face: :monocle_face:
 
-DESCRIPTION
+:electron:DESCRIPTION
 
 This application will help a  manager at an internet retail company, using it the back end for my e-commerce website that uses the latest technologies.
 
-INSTALLATION
+:electron:INSTALLATION
 
-*Node Server.js
-*MySql
-*Sequelize
-*Dotenv
+:boom:*Node Server.js
 
-USAGE
+:boom:*MySql
 
-*NPM start.
-*NPM run seed.
+:boom:*Sequelize
 
-DEMO
+:boom:*Dotenv
+
+:electron:USAGE
+
+:boom:*NPM start.
+
+:boom:*NPM run seed.
+
+:electron:DEMO :smiley_cat: :smiley_cat:
+
+
