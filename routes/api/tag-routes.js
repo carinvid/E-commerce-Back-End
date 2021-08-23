@@ -22,7 +22,7 @@ router.get("/", (req, res) => {
     })
     .catch((err) => {
       console.log(err);
-      res.status(400).json(err);
+      res.status(500).json(err);
     });
   // find all tags
   // be sure to include its associated Product data
@@ -50,7 +50,7 @@ router.get("/:id", (req, res) => {
     })
     .catch((err) => {
       console.log(err);
-      res.status(400).json(err);
+      res.status(500).json(err);
     });
   // find a single tag by its `id`
   // be sure to include its associated Product data
@@ -63,7 +63,7 @@ router.post("/", (req, res) => {
     .then((TagData) => res.json(TagData))
     .catch((err) => {
       console.log(err);
-      res.status(400).json(err);
+      res.status(500).json(err);
     });
   // create a new tag
 });
@@ -88,7 +88,7 @@ router.put("/:id", (req, res) => {
     })
     .catch((err) => {
       console.log(err);
-      res.status(400).json(err);
+      res.status(500).json(err);
     });
   // update a tag's name by its `id` value
 });
