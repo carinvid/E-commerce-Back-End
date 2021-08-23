@@ -21,7 +21,7 @@ router.get("/", (req, res) => {
     })
     .catch((err) => {
       console.log(err);
-      res.status(400).json(err);
+      res.status(500).json(err);
     });
   // find all categories
   // be sure to include its associated Products
@@ -50,7 +50,7 @@ router.get("/:id", (req, res) => {
     })
     .catch((err) => {
       console.log(err);
-      res.status(400).json(err);
+      res.status(500).json(err);
     });
   // find one category by its `id` value
   // be sure to include its associated Products
@@ -63,7 +63,7 @@ router.post("/", (req, res) => {
     .then((categoriesData) => res.json(categoriesData))
     .catch((err) => {
       console.log(err);
-      res.status(400).json(err);
+      res.status(500).json(err);
     });
   // create a new category
 });
@@ -90,7 +90,7 @@ router.put("/:id", (req, res) => {
     })
     .catch((err) => {
       console.log(err);
-      res.status(400).json(err);
+      res.status(500).json(err);
     });
   // update a category by its `id` value
 });
@@ -112,7 +112,7 @@ router.delete("/:id", (req, res) => {
     })
     .catch((err) => {
       console.log(err);
-      res.status(400).json(err);
+      res.status(500).json(err);
     });
   // delete a category by its `id` value
 });
